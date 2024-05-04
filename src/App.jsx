@@ -29,7 +29,6 @@ const DropBody = () => {
   const [{ canDrop, isOver }, drop] = useDrop({
     accept: 'color',
     drop: (item, monitor) => {
-      // handle drop event, change body color
       document.body.style.backgroundColor = item.color;
     },
     collect: (monitor) => ({
